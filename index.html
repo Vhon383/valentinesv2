@@ -42,23 +42,41 @@
         button:hover {
             background-color: #ff1493;
         }
+        #picture {
+            display: none; /* Hidden by default */
+            margin-top: 30px;
+        }
+        #picture img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
     <div class="hearts">❤️ 💖 💕 💗 💓</div>
     <h1>Will You Be My Valentine?</h1>
-    <p>Hey Marielle, my love. Will you go on a date with me this valentines day feb 14?</p>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-        <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-        <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
-    <button onclick="alert('Yay! I love you! ❤️')">Yes!</button>
+    <p>Hey Marielle, my love. Will you go on a date with me this Valentine's Day, Feb 14?</p>
+    <button onclick="showPicture()">Yes!</button>
+        <button onclick="showPicture()">Yes!</button>
 
+            <button onclick="showPicture()">Yes!</button>
 
+                <button onclick="showPicture()">Yes!</button>
+    <button onclick="showPicture()">Yes!</button>
+    <button onclick="showPicture()">Yes!</button>
+
+    <div id="picture">
+        <p>Yay!</p>
+        <img src="us.jpg" alt="Our cute picture!"> <!-- Replace with your image file -->
+    </div>
     <div class="hearts">💖 💕 💗 💓 ❤️</div>
+    
+    <script>
+        function showPicture() {
+            alert('Yay! I love you! ❤️');
+            document.getElementById('picture').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
